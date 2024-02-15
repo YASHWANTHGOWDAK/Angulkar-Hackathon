@@ -1,0 +1,46 @@
+<!-- <p>view-orders works!</p> -->
+
+<div class="card-container">
+    <div *ngFor="let order of orders" class="card">
+        <img src="{{order.image}}" alt="{{ order.contactName }}" class="card-img-top">
+        <div class="card-body">
+            <div class="one">
+                <p class="card-text">orderNo:{{order.orderNo}}</p>
+                <h5 class="card-title">{{order.contactName}}</h5>
+            </div>
+            <div class="one">
+                <p class="card-text">OrderDate:{{order.orderDate}} </p>
+                <p class="card-text">Total: {{order.grandTotal}}</p>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn btn-info" (click)="openForm()">view</button>
+                <!-- <button class="btn btn-info" (click)="openForm()">view</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-wrapper" *ngIf="showform">
+    <div class="orderForm">
+        <h2 class="text-center text-info">{{formHeader}}</h2>
+        <div class="group">
+            <label for="">Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="contactName" name="contactName">
+        </div>
+        <div class="group">
+            <label for="">OrderDate:</label>
+            <input type="text" class="form-control" [(ngModel)]="orderDate" name="orderDate">
+        </div>
+        <div class="group">
+            <label for="">Items:</label>
+            <input type="text" class="form-control" [(ngModel)]="orderitems" name="orderitems">
+        </div>
+        <div class="group">
+            <label for="">Price:</label>
+            <input type="text" class="form-control" [(ngModel)]="grandTotal" name="grandTotal">
+        </div>
+        <div class="action">
+            <button class="btn btn-primary" (click)="closeForm()">close</button>
+        </div>
+    </div>
+</div>

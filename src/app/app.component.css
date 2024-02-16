@@ -14,7 +14,7 @@ body {
     color: #fff;
     padding: 15px 0;
     position: sticky;
-    top:0;
+    top: 0;
     
   }
   
@@ -38,7 +38,7 @@ body {
     text-decoration: none;
   }
   
-  .hero {
+  /* .hero {
     background-image: url('https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=1000&format=pjpg&exif=0&iptc=0');
     background-size: cover;
     color: #fff;
@@ -62,11 +62,17 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-  }
+  } */
   
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+    position: fixed;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
   }

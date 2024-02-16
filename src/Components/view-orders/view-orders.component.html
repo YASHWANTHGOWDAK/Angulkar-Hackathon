@@ -9,11 +9,11 @@
                 <h5 class="card-title">{{order.contactName}}</h5>
             </div>
             <div class="one">
-                <p class="card-text">OrderDate:{{order.orderDate}} </p>
+                <p class="card-text">OrderDate: {{order.orderDate}} </p>
                 <p class="card-text">Total: {{order.grandTotal}}</p>
             </div>
             <div class="buttons">
-                <button type="button" class="btn btn-info" (click)="openForm()">view</button>
+                <button type="button" class="btn btn-info" (click)="openForm(order)">view</button>
                 <!-- <button class="btn btn-info" (click)="openForm()">view</button> -->
             </div>
         </div>

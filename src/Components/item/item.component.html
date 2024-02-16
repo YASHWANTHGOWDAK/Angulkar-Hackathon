@@ -4,15 +4,18 @@
         <img src="{{item.image}}" alt="{{ item.itemName }}" class="card-img-top">
         <div class="card-body">
             <div class="one">
-                <p class="card-text">itemNo:{{ item.itemNo }}</p>
+                <p class="card-text">itemNo:{{item.itemNo}}</p>
                 <h5 class="card-title">{{item.itemName }}</h5>
             </div>
             <div class="one">
                 <p class="card-text">Price: {{ item.itemPrice}} </p>
-                <p class="card-text">Quantity: {{ item.itemQty }}</p>
+                <p class="card-text">Quantity: {{ item.itemQty}}</p>
             </div>
-            <div class="buttons">
-                <button type="button" class="btn btn-success">select</button>
+            <div class="buttons" *ngIf="isSelected === false">
+                <button type="button" class="btn btn-success " (click)="select()">select</button>
+            </div>
+            <div class="buttons" *ngIf="isSelected === true">
+                <button type="button" class="btn btn-success " (click)="increment()">+</button>{{value}}<button type="button" class="btn btn-success " (click)="decrement()">-</button>
             </div>
         </div>
     </div>

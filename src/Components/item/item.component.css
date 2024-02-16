@@ -44,12 +44,14 @@
     justify-content: space-between;
   }
   .btn-success{
-    background-color: red;
-    border:1px solid rgb(43, 14, 203);
-    padding:5px 15px;
-    border-radius: 2px;
-    color: #eee;
+      background-color: red;
+      border: 1px solid rgb(43, 14, 203);
+      padding: 5px 15px;
+      border-radius: 2px;
+      color: #eee;
+  
   }
+
   .one{
     display: flex;
     justify-content: space-between;

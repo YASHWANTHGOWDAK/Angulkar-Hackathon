@@ -3,6 +3,7 @@ import { OrderService } from '../../Services/order.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Order } from '../../Models/Order';
 
 @Component({
   selector: 'app-view-orders',
@@ -17,7 +18,7 @@ export class ViewOrdersComponent {
   constructor(private or:OrderService)
 {}
 
-orders:any;
+orders:Order[]=[]
 formHeader="view-orders-info"
 contactName=""
 orderDate=""
@@ -31,20 +32,20 @@ ngOnInit():void{
 
   this.or.fetchorder().subscribe(data =>{
     this.orders = data; 
-    console.log(this.orders[0].contactName)
+    // console.log(this.orders[0].contactName)
   }
   )
 
 }
 
-openForm(data=null){
+openForm(data:any){
   this.showform=true;
-  // if(data){
-  //   this.contactName=data.contactName;
-  //   this.orderDate=order.orderDate;
-  //   this.orderitems=order.orderitems;
-  //   this.grandTotal=order.grandTotal;
-  // }
+  if(data){
+    this.contactName=data.contactName;
+    this.orderDate=data.orderDate;
+    this.orderitems=data.items_Ordered;
+    this.grandTotal=data.grandTotal;
+  }
 }
 closeForm(){
   this.showform=false;

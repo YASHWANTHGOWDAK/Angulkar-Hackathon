@@ -103,9 +103,24 @@
         },
         {
             "itemNo": 6,
-            "image":"https://lh3.googleusercontent.com/proxy/XJSarFZjy37-rWp5KFqtykEMR_BAQBNJes_qa6_KCN_YCgBExAw0TxfX5oi13S6HYZ8lvZ67XyT4hEGmFZLXJLPin7GQ1PGL5iz0SGx04I93MivKYxal8fXRsgBQR9COAgHPMuq5DrGXY4QEJg",
+            "image":"https://static.toiimg.com/thumb/58360750.cms?width=1200&height=900",
             "itemName": "Mutton Kebab",
             "itemPrice": 350,
+            "itemQty": 1
+        },
+        {
+            "itemNo": 7,
+            "image":"https://www.spiceindiaonline.com/wp-content/uploads/2021/05/Tandoori-Chicken-20.jpg",
+            "itemName": "Grilled Chicken",
+            "itemPrice": 460,
+            "itemQty": 1
+        }
+        ,
+        {
+            "itemNo": 8,
+            "image":"https://i0.wp.com/www.shanazrafiq.com/wp-content/uploads/2018/04/5-DSC_0093-1.jpg?fit=1600%2C1064&ssl=1",
+            "itemName": "Chicken Alfaham",
+            "itemPrice": 550,
             "itemQty": 1
         }
     ]
